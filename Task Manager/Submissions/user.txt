@@ -1,0 +1,3 @@
+"admin", "adm1n"
+"brev", "verb"
+"smith", "smitty"
