@@ -1,1 +1,1 @@
-These are a few files which demonstrate mastery of different parts of the Data Science skillset
+Projects  selected cover a range of skills within the Data Science discipline
