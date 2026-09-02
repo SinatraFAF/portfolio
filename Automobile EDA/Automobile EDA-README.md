@@ -16,7 +16,7 @@ There is no set question that needs to be answered, but we can indeed observe an
 
 ## Dataset
 
-- **Source:** (Automobile EDA/automobile.txt)
+- **Source:** Automobile EDA/automobile.txt
 - **Size:** 26 columns and 206 rows.
 - **Features:** Focus was placed on the following for the purpose of answering the chosen questions:
 
