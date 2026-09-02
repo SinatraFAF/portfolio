@@ -4,7 +4,7 @@ An in-depth exploratory data analysis (EDA) of the Automobile dataset, aimed at 
 
 ## Objective
 
-- There is no set question that needs to be answered, but we can indeed observe and find our own. These are the questions I have chosen to answer:
+There is no set question that needs to be answered, but we can indeed observe and find our own. These are the questions I have chosen to answer:
 
 ● Which are the 5 most expensive cars?
 
