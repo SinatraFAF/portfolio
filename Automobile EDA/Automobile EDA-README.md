@@ -16,7 +16,7 @@ There is no set question that needs to be answered, but we can indeed observe an
 
 ## Dataset
 
-- **Source:** [clickable text](https://github.com/SinatraFAF/portfolio/blob/cb66225ec489924cba8a6b3eef3779bd1ed9c736/Automobile%20EDA/automobile.txt)
+- **Source:** [clickable text]Automobile EDA/automobile.txt
 - **Size:** 26 columns and 206 rows.
 - **Features:** Focus was placed on the following for the purpose of answering the chosen questions:
 
