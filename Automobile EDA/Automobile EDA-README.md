@@ -73,7 +73,7 @@ This report includes:
 Ensure Python and the libraries mentioned above are installed. 
 Download all files in this project folder. 
 The Jupyter notebook can be opened to see how the data was cleaned and used. 
-The report can ties things together and provides insights and answers the questions.
+The report ties things together and provides insights and answers the questions.
 
 
 ## Future Improvements
