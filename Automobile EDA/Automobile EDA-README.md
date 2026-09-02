@@ -70,23 +70,11 @@ This report includes:
 
 ## How to Run
 
-```bash
-git clone [repo-url]
-cd eda-report
-pip install -r requirements.txt
-jupyter notebook eda_report.ipynb
-```
+Ensure Python and the libraries mentioned above are installed. 
+Download all files in this project folder. 
+The Jupyter notebook can be opened to see how the data was cleaned and used. 
+The report can ties things together and provides insights and answers the questions.
 
-## Repo Structure
-
-```
-eda-report/
-├── data/
-├── notebooks/
-│   └── eda_report.ipynb
-├── requirements.txt
-└── README.md
-```
 
 ## Future Improvements
 
