@@ -5,10 +5,13 @@ An in-depth exploratory data analysis (EDA) of the Automobile dataset, aimed at 
 ## Objective
 
 - There is no set question that needs to be answered, but we can indeed observe and find our own. These are the questions I have chosen to answer:
-  
+
 ● Which are the 5 most expensive cars?
+
 ● Which manufacturer builds the most fuel efficient vehicles? 
+
 ● Which vehicles have the largest engine capacity? 
+
 ● Which vehicle manufacturer has the most car models in the dataset
 
 ## Dataset
@@ -18,13 +21,21 @@ An in-depth exploratory data analysis (EDA) of the Automobile dataset, aimed at 
 - **Features:** Focus was placed on the following for the purpose of answering the chosen questions:
 
 ● Make (Categorical - Nominal)
+
 ● Body Style (Categorical - Nominal) 
+
 ● Wheel Base (Numerical - Continuous) 
+
 ● Curb Weight (Numerical - Continuous) 
+
 ● The length, width and height (Numerical - Continuous) 
+
 ● Engine Size (Numerical - Continuous) 
+
 ● Horsepower (Numerical - Continuous) 
+
 ● City and Highway MPG (Numerical - Continuous) 
+
 ● Price - (Numerical - Continuous)
 
 ## Approach
