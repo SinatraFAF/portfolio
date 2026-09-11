@@ -8,17 +8,17 @@ Recognising handwritten digits is a foundational computer vision task with real-
 
 ## Dataset
 
-- **Source:** MNIST (via `keras.datasets` / `torchvision.datasets`)
+- **Source:** MNIST [Training set](Image Recognition/optdigits.tra), [Test set](Image Recognition/optdigits.tes)
 - **Size:** 60,000 training images, 10,000 test images
 - **Format:** 28x28 grayscale images
 - **Target variable:** digit label (0-9)
 
 ## Approach
 
-1. **Preprocessing** — normalised pixel values (0-1), reshaped images for model input, one-hot encoded labels (if applicable)
-2. **Model architecture** — [MLP / CNN — describe layers, e.g. Conv2D → MaxPooling → Dense layers]
-3. **Training** — loss function (categorical cross-entropy), optimizer (Adam), number of epochs, batch size
-4. **Validation** — held-out validation split to monitor overfitting
+1. **Preprocessing** — none
+2. **Model architecture** — RandomForestClassifier
+3. **Training** — used training data
+4. **Parameter to change** — n_estimators
 
 ## Evaluation Metrics
 
@@ -27,47 +27,29 @@ Recognising handwritten digits is a foundational computer vision task with real-
 
 ## Results
 
-- **Final test accuracy:** [X]%
-- [Add training/validation accuracy and loss curves]
-- [Add confusion matrix image]
-- [Add grid of sample correct vs. incorrect predictions]
+- **Final test accuracy:** 96%
+<img width="302" height="125" alt="image" src="https://github.com/user-attachments/assets/d64893c5-476c-473d-a6b4-cbbe874283d1" />
+
 
 ## Key Insights
 
-- [Which digits are most commonly confused, e.g. 4 vs 9, 3 vs 5]
-- [Effect of architecture choices on performance]
+- We can see the following results in our confusion matrix:
+  <img width="467" height="332" alt="image" src="https://github.com/user-attachments/assets/0c5c3f1b-f80c-4799-8a6e-e2132caeb721" />
+- n_estimators was chosen because the number of trees is relied upon heavily in a random forest (more trees leads to more accuracy but can use more resources and take longer).  
+
 
 ## Tech Stack
 
 - Python
-- TensorFlow/Keras (or PyTorch)
-- numpy, matplotlib
+- scipy, sklearn
+- pandas, numpy, matplotlib
 
 ## How to Run
 
-```bash
-git clone [repo-url]
-cd digit-classifier
-pip install -r requirements.txt
-jupyter notebook digit_classifier.ipynb
-```
-
-## Repo Structure
-
-```
-digit-classifier/
-├── notebooks/
-│   └── digit_classifier.ipynb
-├── requirements.txt
-└── README.md
-```
+Download all files, run Jupyter notebook, important observations and explanations are present in markdown cells or as comments
 
 ## Future Improvements
 
 - [ ] Experiment with deeper CNN architectures
 - [ ] Data augmentation to improve generalisation
 - [ ] Test on custom handwritten input (e.g. drawn digits via a simple UI)
-
-## Contact
-
-[Your name] | [LinkedIn] | [GitHub]
