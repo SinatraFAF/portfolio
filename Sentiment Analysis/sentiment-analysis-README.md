@@ -1,6 +1,6 @@
 # Sentiment Analysis
 
-A text classification model that predicts sentiment (positive/negative, or positive/neutral/negative) from written text such as product reviews or social media posts.
+A text classification model that predicts sentiment (positive/negative, or positive/neutral/negative) from written text such as product reviews.
 
 ## Problem Statement
 
@@ -8,14 +8,14 @@ Understanding customer sentiment at scale is valuable for monitoring brand perce
 
 ## Dataset
 
-- **Source:** [add dataset source/link, e.g. IMDB reviews, Twitter sentiment dataset]
-- **Size:** [X samples]
-- **Class balance:** [e.g. roughly balanced / imbalanced — note if resampling was needed]
-- **Labels:** [Positive/Negative, or Positive/Neutral/Negative]
+- **Source:** [Kaggle](https://www.kaggle.com/datasets/datafiniti/consumer-reviews-of-amazon-products/data?select=Datafiniti_Amazon_Consumer_Reviews_of_Amazon_Products_May19.csv)
+- **Size:** This dataset is a list of over 28,000 consumer reviews for Amazon products like the Kindle, Fire TV Stick, and more from Datafiniti's Product Database updated between February 2019 and April 2019
+- **Class balance:** Roughly balanced
+- **Labels:** Positive/Neutral/Negative
 
 ## Approach
 
-1. **Text preprocessing** — lowercasing, removing punctuation/stopwords, tokenization, lemmatization
+1. **Text preprocessing** — removed rows with missing review text, lowercasing, removing leading and trailing spaces, tokenization
 2. **Feature extraction** — [TF-IDF / Bag-of-Words / word embeddings]
 3. **Modeling** — trained and compared:
    - Logistic Regression (baseline)
