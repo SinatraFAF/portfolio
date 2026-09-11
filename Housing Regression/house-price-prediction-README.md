@@ -28,17 +28,16 @@ Accurately pricing a property is difficult given the number of interacting facto
 
 ## Results
 
-| Model |  MSE | RMSE | R² |
---Placeholder--
-|---|---|---|---|
-| Multiple Linear Regression | – | – | – |
+When we compute the MSE or RMSE, we get the following result: 
+<img width="211" height="19" alt="image" src="https://github.com/user-attachments/assets/237be3f1-63b1-4f58-ac53-7b794ef99f8b" />
 
-Using the model and we can predict the sale price for a house and how certain factor can influence this price
+
+Using the model we can predict the sale price for a house and how certain factor can influence this price
 <img width="1369" height="354" alt="image" src="https://github.com/user-attachments/assets/20e7d0e9-9b89-4a2c-a340-81876b9419ae" />
 
 
 ## Key Insights
---Placeholders--
+The following visualisation shows us correlations between the different factors, and how these relationships can influence the price of a house:
 <Figure size 1000x800 with 2 Axes><img width="881" height="786" alt="image" src="https://github.com/user-attachments/assets/8c927279-dfa1-4309-b397-507221d37bed" />
 
 
