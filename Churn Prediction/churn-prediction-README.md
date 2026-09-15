@@ -8,7 +8,7 @@ Customer churn is costly — acquiring a new customer typically costs more than 
 
 ## Dataset
 
-- **Source:** [add dataset source/link]
+- **Source:** [Telco Customer Churn](Churn Prediction/Telco-Customer-Churn.csv)
 - **Size:** [X rows, Y features]
 - **Features:** mix of demographic, account, and usage data (e.g. tenure, contract type, monthly charges, service usage)
 - **Target variable:** `Churn` (binary — Yes/No)
