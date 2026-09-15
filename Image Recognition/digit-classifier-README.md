@@ -8,10 +8,8 @@ Recognising handwritten digits is a foundational computer vision task with real-
 
 ## Dataset
 
-- **Source:** MNIST
-  [Training set](Image Recognition/optdigits.tra) and [Test set](Image Recognition/optdigits.tes)
-- **Size:** 60,000 training images, 10,000 test images
-- **Format:** 28x28 grayscale images
+- **Source:** [Optical Recognition of Handwritten Digits](https://archive.ics.uci.edu/dataset/80/optical+recognition+of+handwritten+digits)
+- **Format:** 32x32 bitmaps downscaled to 8x8 matrices
 - **Target variable:** digit label (0-9)
 
 ## Approach
