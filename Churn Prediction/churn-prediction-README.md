@@ -77,13 +77,3 @@ Both models are evaluated beyond plain accuracy, since churn prediction has an i
 
 ## How to Run
 Download the files, run the Jupyter notebook. Noteworthy observations are available as markdown cells or comments.
-
-## Future Improvements
-
-- [ ] Try additional models (e.g. LightGBM, neural network)
-- [ ] Deploy as an API for real-time churn scoring
-- [ ] Add SHAP values for model explainability
-
-## Contact
-
-[Your name] | [LinkedIn] | [GitHub]
