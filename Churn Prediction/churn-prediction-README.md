@@ -8,70 +8,75 @@ Customer churn is costly — acquiring a new customer typically costs more than 
 
 ## Dataset
 
-- **Source:** [Telco Customer Churn](Churn Prediction/Telco-Customer-Churn.csv)
-- **Size:** [X rows, Y features]
-- **Features:** mix of demographic, account, and usage data (e.g. tenure, contract type, monthly charges, service usage)
-- **Target variable:** `Churn` (binary — Yes/No)
+- **Source:** [Telco Customer Churn](Telco-Customer-Churn.csv)
+- **Size:** 21 columns, 7043 rows
+- **Features:** customer account details (tenure, contract type, payment method), billing info (MonthlyCharges, TotalCharges), and service subscriptions (phone, internet, streaming, security add-ons)
+- **Target variable:** `Churn_1` (binary — Yes/No)
 
 ## Approach
 
-1. **Exploratory Data Analysis** — checked class balance, distributions, and relationships between features and churn
-2. **Preprocessing** — handled missing values, encoded categorical variables, scaled numeric features, addressed class imbalance (e.g. SMOTE / class weighting)
-3. **Modeling** — trained and compared multiple classifiers:
-   - Logistic Regression (baseline)
-   - Random Forest
-   - XGBoost
-4. **Hyperparameter tuning** — [GridSearchCV / RandomizedSearchCV, if used]
+**Data Inspection** — Reviewed the first 10 rows, column names, and data types to understand the raw structure
+### Preprocessing:
+   - Converted TotalCharges to numeric (was stored as object/string)
+   - Dropped rows with missing values
+   - Removed the non-predictive customerID column
+   - Encoded 'Churn_1' as binary (Yes → 1, No → 0)
+   - One-hot encoded categorical variables into a dummy-variable DataFrame (telecom_cust_dummies), dropping one category per feature to avoid the dummy variable trap and reduce multicollinearity
+### Data Visualisation
+- Correlation plot of all features against `Churn`
+- Histogram of `tenure` distribution
+- Scatter plot of `MonthlyCharges` vs. `TotalCharges`
+- Box plot comparing `tenure` between churned and non-churned customers
+
+### Preparing for ML
+- Scaled all features to a 0–1 range using min-max scaling
+- Split into training/test sets (75% train / 25% test)
+
+## Models
+
+### Logistic Regression
+- Baseline linear classifier trained on the scaled, encoded feature set
+
+### Random Forest
+Tuned hyperparameters:
+- `n_estimators` = 2000
+- `oob_score` = True (out-of-bag error estimation)
+- `max_features` = "sqrt"
+- `max_leaf_nodes` = 50
+- `bootstrap` = True
 
 ## Evaluation Metrics
 
-Since churn datasets are typically imbalanced, accuracy alone is misleading. This project prioritises:
+Both models are evaluated beyond plain accuracy, since churn prediction has an inherent cost asymmetry between false positives and false negatives:
+- **Accuracy** — overall proportion correctly classified
+- **OOB error estimate** (Random Forest) — generalisation estimate computed as `1 - oob_score_`, without needing a separate validation set
+- **Confusion matrix** — breakdown of true/false positives and negatives for each model
 - **Precision** — of predicted churners, how many actually churned
-- **Recall** — of actual churners, how many were caught
-- **F1-score** — balance of precision and recall
-- **ROC-AUC** — overall model discrimination ability
+- **Recall** — of actual churners, how many were correctly identified
 
 ## Results
 
-| Model | Precision | Recall | F1-score | ROC-AUC |
-|---|---|---|---|---|
-| Logistic Regression | – | – | – | – |
-| Random Forest | – | – | – | – |
-| XGBoost | – | – | – | – |
+| Model | Accuracy | Precision | Recall |
+|---|---|---|---|
+| Logistic Regression | – | – | – |
+| Random Forest | – | – | – |
 
-[Add confusion matrix / ROC curve image here]
+## Placeholder for confusion matrix
 
 ## Key Insights
 
-- [Top features driving churn, e.g. contract type, tenure, monthly charges]
-- [Any surprising patterns found during analysis]
+- 
+- 
 
 ## Tech Stack
 
 - Python
 - pandas, numpy
-- scikit-learn, XGBoost
+- scikit-learn
 - matplotlib, seaborn
 
 ## How to Run
-
-```bash
-git clone [repo-url]
-cd churn-prediction
-pip install -r requirements.txt
-jupyter notebook churn_prediction.ipynb
-```
-
-## Repo Structure
-
-```
-churn-prediction/
-├── data/
-├── notebooks/
-│   └── churn_prediction.ipynb
-├── requirements.txt
-└── README.md
-```
+Download the files, run the Jupyter notebook. Noteworthy observations are available as markdown cells or comments.
 
 ## Future Improvements
 
