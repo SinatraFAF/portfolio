@@ -1,10 +1,10 @@
-# House Price Prediction
+# House Price Prediction – Ames Housing (Linear Regression)
 
-A regression model that estimates residential property sale prices based on property characteristics, built to support pricing decisions for buyers, sellers, or agents.
+A multiple linear regression model that estimates residential sale price from the Ames, Iowa housing dataset, using above-grade living area and garage size as predictors.
 
 ## Problem Statement
 
-Accurately pricing a property is difficult given the number of interacting factors (location, size, number of floors, amenities). This project builds a model to predict sale price from structured property data, helping remove some of the guesswork from pricing.
+Accurately pricing a property is difficult given the number of interacting factors. This project builds a simple, interpretable multiple linear regression model to estimate SalePrice from two key size-related features, and evaluates how well those features alone explain price variation.
 
 ## Dataset
 
@@ -15,9 +15,9 @@ Accurately pricing a property is difficult given the number of interacting facto
 
 ## Approach
 
-1. **Exploratory Data Analysis** — examined price distribution, correlations between features and price, and identified outliers
-2. **Preprocessing** — handled missing values, removed duplicates, encoded categorical features, scaled numeric features, engineered new features where useful (e.g. house age, total square footage)
-3. **Modeling** — trained and compared:
+1. **Preprocessing** — Cleaned and prepared the dataset as needed (missing values, data types)
+2. **Exploratory Data Analysis** — Visualised the distribution of the dependent variable (SalePrice) and the two independent variables. Explored relationships and trends between Gr_Liv_Area, Garage_Area, and SalePrice via scatter plots
+4. **Modeling** — trained and compared:
    - Multiple Linear Regression
 
 ## Evaluation Metrics
@@ -52,9 +52,3 @@ The following visualisation shows us correlations between the different factors,
 
 Download all files, run Jupyter Notebook, look at visualisations. Observations are present in comments or markdown cells.
 ```
-
-## Future Improvements
-
-- [ ] Feature engineering pass (interaction terms, polynomial features)
-- [ ] Try stacking/ensemble of top models
-- [ ] Deploy as a simple web app for interactive price estimates
