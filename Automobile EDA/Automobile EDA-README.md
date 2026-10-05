@@ -1,10 +1,10 @@
-# Exploratory Data Analysis Report
+# EDA Report – Automobile Dataset
 
-An in-depth exploratory data analysis (EDA) of the Automobile dataset, aimed at uncovering patterns, relationships, and data quality issues before any modelling work.
+An exploratory data analysis of the automobile dataset, cleaning and investigating vehicle characteristics and pricing data, compiled into a standalone PDF report.
 
 ## Objective
 
-There is no set question that needs to be answered, but we can indeed observe and find our own. These are the questions I have chosen to answer:
+Clean, sanitise, and explore the dataset to understand its structure, quality, and underlying patterns, and answer a set of guided questions about the data — with all visualisations, investigations, and findings written up as a PDF report. Focus is placed on the following questions:
 
 ● Which are the 5 most expensive cars?
 
@@ -58,8 +58,14 @@ There is no set question that needs to be answered, but we can indeed observe an
 
 This report includes:
 - Bar charts comparing the car manufacturers and fuel efficiency
+  <img width="571" height="502" alt="image" src="https://github.com/user-attachments/assets/1919ec5f-c6bb-4926-b9f3-b2f2e94885e9" />
+
 - Scatter plot to compare engine size and fuel efficiency
+  <img width="572" height="448" alt="image" src="https://github.com/user-attachments/assets/26bf0fa6-6071-422c-89f6-8581ff16e281" />
+
 - Pie chart comparing the distribution of car manufacturers in the data
+  <img width="407" height="393" alt="image" src="https://github.com/user-attachments/assets/6fa18303-4a81-4a8f-b60e-7de94ef8f656" />
+
 - Screenshots from the notebook were also used when appropriate
 
 ## Tech Stack
@@ -74,10 +80,3 @@ Ensure Python and the libraries mentioned above are installed.
 Download all files in this project folder. 
 The Jupyter notebook can be opened to see how the data was cleaned and used. 
 The report ties things together and provides insights and answers the questions.
-
-
-## Future Improvements
-
-- [ ] Use findings to inform feature engineering for a downstream model
-- [ ] Add statistical tests to confirm significance of observed patterns
-- [ ] Build an interactive dashboard version (e.g. with Plotly/Streamlit)
