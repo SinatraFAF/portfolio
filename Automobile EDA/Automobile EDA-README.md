@@ -40,11 +40,15 @@ Clean, sanitise, and explore the dataset to understand its structure, quality, a
 
 ## Approach
 
-1. **Data overview** — shape, data types, missing values, duplicates
-2. **Univariate analysis** — distributions of individual features (histograms, boxplots, value counts)
-3. **Bivariate/multivariate analysis** — relationships between features and the variable(s) of interest (scatter plots, correlation heatmaps, group comparisons)
-4. **Outlier detection** — identifying and assessing extreme values
-5. **Missing value analysis** — patterns in missingness and how they were handled
+### Data Loading & Cleaning
+- Loaded the raw dataset into the notebook
+- Removed duplicate rows
+- Discarded entries with any missing values
+- Converted relevant columns to their correct data types (e.g. numeric fields stored as strings/objects)
+
+### Exploratory Analysis
+- Answered the guided questions
+- Investigated feature distributions, relationships, and any notable patterns or anomalies in the cleaned dataset
 
 ## Key Findings
 
