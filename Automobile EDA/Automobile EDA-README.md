@@ -62,12 +62,15 @@ Clean, sanitise, and explore the dataset to understand its structure, quality, a
 
 This report includes:
 - Bar charts comparing the car manufacturers and fuel efficiency
+  
   <img width="571" height="502" alt="image" src="https://github.com/user-attachments/assets/1919ec5f-c6bb-4926-b9f3-b2f2e94885e9" />
 
 - Scatter plot to compare engine size and fuel efficiency
+  
   <img width="572" height="448" alt="image" src="https://github.com/user-attachments/assets/26bf0fa6-6071-422c-89f6-8581ff16e281" />
 
 - Pie chart comparing the distribution of car manufacturers in the data
+  
   <img width="407" height="393" alt="image" src="https://github.com/user-attachments/assets/6fa18303-4a81-4a8f-b60e-7de94ef8f656" />
 
 - Screenshots from the notebook were also used when appropriate
