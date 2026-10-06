@@ -22,18 +22,21 @@ Accurately pricing a property is difficult given the number of interacting facto
 
 ## Evaluation Metrics
 
-- **MSE** (Mean Squared Error) — average of the squares of the errors
-- **RMSE** (Root Mean Squared Error) — penalises large errors, in same units as price
-- **R²** — proportion of variance in price explained by the model
+- Generated predictions on the test set
+- Computed MSE / RMSE on the test set
+- Generated an error plot comparing predicted vs. actual `SalePrice` values on the test set
 
 ## Results
 
-When we compute the MSE or RMSE, we get the following result: 
-<img width="211" height="19" alt="image" src="https://github.com/user-attachments/assets/237be3f1-63b1-4f58-ac53-7b794ef99f8b" />
+<img width="298" height="87" alt="image" src="https://github.com/user-attachments/assets/72a1ed7e-5e18-4588-aa02-2642d1a99252" />
 
 
 Using the model we can predict the sale price for a house and how certain factor can influence this price
 <img width="1369" height="354" alt="image" src="https://github.com/user-attachments/assets/20e7d0e9-9b89-4a2c-a340-81876b9419ae" />
+
+The error plot shows results tend to fall close to 0 (and outliers seem to be unique houses/cases):
+<img width="613" height="448" alt="image" src="https://github.com/user-attachments/assets/70bf8fa7-ca81-4073-b969-ffff2c961f8b" />
+
 
 
 ## Key Insights
