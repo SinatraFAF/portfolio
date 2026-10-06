@@ -17,10 +17,14 @@ Accurately pricing a property is difficult given the number of interacting facto
 
 1. **Preprocessing** — Cleaned and prepared the dataset as needed (missing values, data types)
 2. **Exploratory Data Analysis** — Visualised the distribution of the dependent variable (SalePrice) and the two independent variables. Explored relationships and trends between Gr_Liv_Area, Garage_Area, and SalePrice via scatter plots
-4. **Modeling** — trained and compared:
-   - Multiple Linear Regression
+3. **Modeling**
+- Split the data into independent variables (`Gr_Liv_Area`, `Garage_Area`) and the dependent variable (`SalePrice`)
+- Split into training and test sets (75% train / 25% test)
+- Built a multiple linear regression model on the training set using both predictors
+- Printed the model's intercept and coefficients
 
-## Evaluation Metrics
+
+## Evaluation
 
 - Generated predictions on the test set
 - Computed MSE / RMSE on the test set
