@@ -64,6 +64,7 @@ Both models are evaluated beyond plain accuracy, since churn prediction has an i
 <img width="882" height="56" alt="image" src="https://github.com/user-attachments/assets/8c9e75bf-0e79-4fcd-a41c-da9a4948f665" />
 
 The confusion matrices for both models:
+
 <img width="291" height="122" alt="image" src="https://github.com/user-attachments/assets/8b207859-ac23-4daa-a780-64e75e2f2a75" />
 
 
