@@ -31,9 +31,6 @@ Recognising handwritten digits is a foundational classification task with real-w
 - **Value used:** 50 — chosen because it had the second highest accuracy, could run fast and use less memory than 200
 <img width="216" height="182" alt="image" src="https://github.com/user-attachments/assets/63846bd6-d788-4129-9669-3eb0bc566f76" />
 
-Results for testing using '50'
-<img width="208" height="68" alt="image" src="https://github.com/user-attachments/assets/425ded6b-f39a-4ebc-9ca5-377edc3264e1" />
-
 - **Class with the most misclassifications:** – 8 and 9
 - **Final test accuracy:** 96%
 <img width="302" height="125" alt="image" src="https://github.com/user-attachments/assets/d64893c5-476c-473d-a6b4-cbbe874283d1" />
