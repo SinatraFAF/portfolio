@@ -40,6 +40,7 @@ Recognising handwritten digits is a foundational classification task with real-w
 
 - We can see the following results in our confusion matrix:
 <img width="467" height="332" alt="image" src="https://github.com/user-attachments/assets/0c5c3f1b-f80c-4799-8a6e-e2132caeb721" />
+
 - Both digit 8 and 9 have 12 misclassifications, significantly more than other digits
 
 
