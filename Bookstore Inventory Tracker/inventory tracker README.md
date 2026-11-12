@@ -10,7 +10,7 @@ A bookstore needs a simple, reliable way to track stock. The clerk must be able 
 
 - **Engine:** SQLite (`ebookstore`)
 - **Tables:** `book` and `author`, linked by a foreign key
-- **Starter data:** populated on first run with the provided records, plus [number] additional entries of my own
+- **Starter data:** populated on first run with the provided records
 
 ### Schema
 
